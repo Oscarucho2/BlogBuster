@@ -1,0 +1,70 @@
+<div class="imagen_fondo">
+    <h1 class="titulo_banner"> Los juegos más esperados de 2022: Elden Ring, Warzone 2.0, God of War Ragnarök y todos
+        los bombazos de un año demoledor</h1>
+    <p class="texto_banner"></p>
+</div>
+
+<div class="text">
+    <p> Si todo sale según lo prometido, <strong>2022 será un año para enmarcar en la historia del videojuego</strong>.
+        365 días en los que todos los grandes agentes tienen previsto lanzar la artillería pesada. Algo que, en muchos
+        aspectos, asentará definitivamente la nueva generación de consolas, consolidará todavía más el éxito de Nintendo
+        Switch y dará nuevos motivos para estrenar gráficas y ratón a los jugones de PC.
+
+        Y es que se nos han juntado muchos bombazos. Algunos programados y otros tras retrasos muy sonoros. A lo que hay
+        que sumar las tradicionales citas anuales y relanzamientos que no conviene pasar por alto como Advance Wars 1+2:
+        Re-Boot Camp, las ediciones de GTA V y Cyberpunk 2077 de nueva generación, la versiones de PC de juegazos como
+        God of War, Monster Hunter Rise o Uncharted 4, y directamente damos por hecho el regreso de alguna saga
+        nintendera en Switch.</p>
+</div>
+
+<div class="CARDS">
+    <div class="card" style="width: 18rem;" *ngFor="let games of videoGames">
+        <img src={{games.Imagen}} class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">{{games.Nombre}}</h5>
+            <p class="card-text">{{games.Descripcion}}</p>
+            <a href="#" class="btn btn-primary">Ir al trailer</a>
+        </div>
+    </div>
+</div>
+
+<div class="mas">
+    <div class="recomendacion">
+        <hr>
+        <h5>HOY SE HABLA DE</h5>
+        <p>
+            Juegos Gratis -- Warzone 2 -- Wordle PC Gaming Steam Deck -- Elden Ring -- Pokémon -- Zelda -- The Witcher
+            -- God of War</p>
+    </div>
+    <div class="recomendacion2">
+        <hr>
+        <h5>Te recomendamos</h5>
+        <img src="https://i.blogs.es/9d17af/need-for-speed-unbound/150_150.jpeg">
+        <p>Need for Speed Unbound: primer contacto. Así han sido mis primeras horas haciendo el cabra por Lakeshore</p>
+        <hr>
+        <img src="https://i.blogs.es/5ea2d5/x720/150_150.jpeg">
+        <p>El segundo tráiler de Super Mario Bros. La Película es todo un homenaje a los juegos clásicos de la saga del
+            fontanero de Nintendo</p>
+        <hr>
+        <img src="https://i.blogs.es/ca0cf6/ps-vr2/150_150.jpeg" alt="">
+        <p>PlayStation VR2: confirmado el precio, los packs y la fecha de lanzamiento del nuevo dispositivo de realidad
+            virtual para PS5PlayStation VR2: confirmado el precio, los packs y la fecha de lanzamiento.</p>
+        <hr>
+    </div>
+    <div class="formulario">
+        <h5>Suscribete a BlogBuster!</h5>
+        <p>Recibe diariamente correos con nuestras actualizaciones y contenido nuevo!</p>
+        <div class="col">
+            <form [formGroup]="videoGameForm">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Hazlo aqui</span>
+                    </div>
+                    <input formControlName="UserEmail" type="text" class="form-control" placeholder="email">
+                </div>
+                <button (click)="Agregar()" type="submit" class="btn btn-primary">Suscribirse</button>
+            </form>
+        </div>
+        <hr>
+    </div>
+</div>

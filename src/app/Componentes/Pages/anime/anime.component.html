@@ -1,0 +1,15 @@
+<div class="titulo"> 
+    <h5>Anime y manga</h5>
+    <h1>Temporada de anime de otoño de 2022: los estrenos más destacados y esperados</h1>
+</div>
+
+<div class="CARDS">
+    <div class="card" style="width: 18rem;" *ngFor="let item of databaseList">
+        <img src={{item.img}} class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">{{item.titulo}}</h5>
+            <p class="card-text">{{item.texto}}</p>
+            <a href={{item.trailer}} class="btn btn-primary">Ver tráiler</a>
+        </div>
+    </div>
+</div>

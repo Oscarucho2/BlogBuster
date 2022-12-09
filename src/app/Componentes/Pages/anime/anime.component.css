@@ -1,0 +1,16 @@
+.CARD{
+    width: 100%;
+}
+
+.card
+{
+    margin-top: 60px;
+    margin-left: 70px;
+    display: inline-block;
+}
+
+.titulo
+{
+    margin-top: 30px;
+    text-align: center;
+}

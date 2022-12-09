@@ -1,0 +1,50 @@
+
+.imagenes
+{
+    margin-top: 40px;
+}
+
+
+.titulo
+{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.festivales
+{
+    display: grid;
+    place-content: center;
+}
+
+.CARD{
+    width: 100%;
+}
+
+.card
+{
+    margin-top: 60px;
+    margin-left: 70px;
+    display: inline-block;
+}
+
+.festivales hr
+{
+    border: none;
+    height: 1px;
+    background-color: black;
+    margin-top: 80px;
+    margin-left:25% !important; 
+    margin-right:25% !important;
+
+}
+.card:hover
+{
+    transform: scale(1.1);
+}
+
+.songs
+{
+    margin:0px auto;
+    width: 50%;
+}

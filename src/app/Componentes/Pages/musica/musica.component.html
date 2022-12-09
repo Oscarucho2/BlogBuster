@@ -1,0 +1,56 @@
+<section class="festivales">
+    <div class="titulo">
+        <h1 class="fest">Verano 2022: ¡han vuelto los festivales!</h1>
+    </div>
+
+    <div class="imagenes">
+        <img src="https://www.lacupulamusic.com/blog/wp-content/uploads/2022/06/Festivales-verano-2022.jpg" alt="">
+    </div>
+
+    <div class="CARDS">
+        <div class="card" style="width: 18rem;" *ngFor="let item of databaseList">
+            <img src={{item.img}} class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">{{item.titulo}}</h5>
+                <p class="card-text">{{item.texto}}</p>
+                <a href="" class="btn btn-primary">Leer más</a>
+            </div>
+        </div>
+    </div>
+    <hr>
+</section>
+
+<h1 style="text-align: center;">Elige tus canciones favoritas!</h1>
+<div class="songs">
+    <div class="row" style="padding-top: 5%;">
+        <div class="col">
+            <div class="col-md-8 content">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Id</th>
+                            <th scope="col">Cancion</th>
+                            <th scope="col">Album</th>
+                            <th scope="col">Autor</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let songs of musicList">
+                            <td name="id_cancion">{{songs.id_cancion}}</td>
+                            <td>{{songs.nombre}}</td>
+                            <td>{{songs.album}}</td>
+                            <td>{{songs.artista}}</td>
+                            <td>
+                                <button class="btn btn-success text-white">Me gusta
+                                </button>
+                            </td>
+                            <td>
+                                <button class="btn btn-danger text-white" (click)="Eliminar(songs.id_cancion)">No me
+                                    gusta
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>

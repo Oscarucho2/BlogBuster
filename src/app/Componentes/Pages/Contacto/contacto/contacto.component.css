@@ -1,0 +1,72 @@
+.imagen_fondo{
+    
+    background-image: url(https://images8.alphacoders.com/127/1271062.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 30em;
+}
+
+.Boton{
+    display: flex;
+    justify-content: center;
+}
+
+.titulo_banner{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    padding-top: 4em;
+}
+
+.texto_banner{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding-top: 2em;
+}
+
+.imagen{
+    margin-top: 100px;
+}
+
+.cardContacto{
+    margin-top: 150px;
+}
+
+.card-title
+{
+    text-align: left;
+}
+
+.card-text
+{
+    text-align: left;
+}
+
+.PreguntasFrecuentes{
+    text-align: center;
+    justify-content: center;
+
+    margin-top: 100px;
+}
+
+
+.btn{
+    margin-top: 20px;
+}
+
+.card{
+    text-align: center;
+    justify-content: center;
+    width: 50%;
+    left: 25%;
+}
+
+/*
+.preguntas{
+   margin-left: -264px;
+}
+*/

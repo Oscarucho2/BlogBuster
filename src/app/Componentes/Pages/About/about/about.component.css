@@ -1,0 +1,39 @@
+.titulo{
+    text-align: left;;
+    margin-top: 100px;
+    margin-left: 200px;
+    margin-right: 600px;
+}
+
+
+.CARD
+{
+    margin-left: 200px;
+    margin-top: 50px;
+}
+
+.chato
+{
+    width: 30%;
+    margin-top: -835px;
+    margin-left: 1000px;
+    text-align: center;
+}
+
+.dudas
+{
+    margin-top: 150px;
+    text-align: center;
+}
+
+.forms
+{
+    margin: 10%;
+    margin-top: -10px;
+}
+
+.boton
+{
+    margin-top: -150px;
+    margin-left: 80%;
+}
